@@ -30,6 +30,7 @@
 		76BE59782890E1F800DD5074 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		76BE59802890E5D200DD5074 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		76BE59842890ED7E00DD5074 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		76FBE1F7289118C500FA3F9F /* 0726-sesac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "0726-sesac.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		76BE59582890DDC000DD5074 = {
 			isa = PBXGroup;
 			children = (
+				76FBE1F7289118C500FA3F9F /* 0726-sesac.playground */,
 				76BE59632890DDC000DD5074 /* sesac-0727 */,
 				76BE59622890DDC000DD5074 /* Products */,
 			);
