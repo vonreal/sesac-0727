@@ -15,9 +15,9 @@ import UIKit
   1. 왼팔/오른팔
  */
 
+// 프로토콜은 상속 다음에 채택되어야 한다.
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
     @IBOutlet weak var searchTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()

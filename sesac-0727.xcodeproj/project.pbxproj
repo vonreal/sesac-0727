@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7624105828928353005AFE3F /* 0727-Assignment.storyboard */; };
+		7624105B28928559005AFE3F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624105A28928559005AFE3F /* WebViewController.swift */; };
+		76563BBD28920CCD008F2CE1 /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */; };
+		76563BBF2892236C008F2CE1 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BBE2892236C008F2CE1 /* LottoViewController.swift */; };
+		76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BC028923067008F2CE1 /* TranslateViewController.swift */; };
+		76563BC328923AE0008F2CE1 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BC228923AE0008F2CE1 /* WebViewViewController.swift */; };
 		76BE59652890DDC000DD5074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59642890DDC000DD5074 /* AppDelegate.swift */; };
 		76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59662890DDC000DD5074 /* SceneDelegate.swift */; };
 		76BE59692890DDC000DD5074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59682890DDC000DD5074 /* ViewController.swift */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7624105828928353005AFE3F /* 0727-Assignment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "0727-Assignment.storyboard"; sourceTree = "<group>"; };
+		7624105A28928559005AFE3F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
+		76563BBE2892236C008F2CE1 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		76563BC028923067008F2CE1 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		76563BC228923AE0008F2CE1 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		76BE59612890DDC000DD5074 /* sesac-0727.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sesac-0727.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BE59642890DDC000DD5074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BE59662890DDC000DD5074 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76563BBB28920C9F008F2CE1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		76BE59582890DDC000DD5074 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +84,7 @@
 		76BE59632890DDC000DD5074 /* sesac-0727 */ = {
 			isa = PBXGroup;
 			children = (
+				76563BBB28920C9F008F2CE1 /* Protocol */,
 				76BE59642890DDC000DD5074 /* AppDelegate.swift */,
 				76BE59662890DDC000DD5074 /* SceneDelegate.swift */,
 				76BE59682890DDC000DD5074 /* ViewController.swift */,
@@ -74,6 +95,11 @@
 				76BE596D2890DDC100DD5074 /* Assets.xcassets */,
 				76BE596F2890DDC100DD5074 /* LaunchScreen.storyboard */,
 				76BE59722890DDC100DD5074 /* Info.plist */,
+				76563BBE2892236C008F2CE1 /* LottoViewController.swift */,
+				76563BC028923067008F2CE1 /* TranslateViewController.swift */,
+				76563BC228923AE0008F2CE1 /* WebViewViewController.swift */,
+				7624105828928353005AFE3F /* 0727-Assignment.storyboard */,
+				7624105A28928559005AFE3F /* WebViewController.swift */,
 			);
 			path = "sesac-0727";
 			sourceTree = "<group>";
@@ -137,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76BE59712890DDC100DD5074 /* LaunchScreen.storyboard in Resources */,
+				7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */,
 				76BE59852890ED7E00DD5074 /* ListTableViewCell.xib in Resources */,
 				76BE596E2890DDC100DD5074 /* Assets.xcassets in Resources */,
 				76BE596C2890DDC000DD5074 /* Main.storyboard in Resources */,
@@ -153,7 +180,12 @@
 				76BE59692890DDC000DD5074 /* ViewController.swift in Sources */,
 				76BE59652890DDC000DD5074 /* AppDelegate.swift in Sources */,
 				76BE59792890E1F800DD5074 /* SearchViewController.swift in Sources */,
+				7624105B28928559005AFE3F /* WebViewController.swift in Sources */,
+				76563BBF2892236C008F2CE1 /* LottoViewController.swift in Sources */,
 				76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */,
+				76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */,
+				76563BBD28920CCD008F2CE1 /* ViewPresentableProtocol.swift in Sources */,
+				76563BC328923AE0008F2CE1 /* WebViewViewController.swift in Sources */,
 				76BE59812890E5D200DD5074 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
