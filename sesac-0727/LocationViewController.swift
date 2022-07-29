@@ -34,6 +34,14 @@ class LocationViewController: UIViewController {
     
     // Notification - 3. 권한 허용한 사용자에게 알림 요청(언제, 어떤 콘텐츠를 보낼것인가가 들어가야함)
     // iOS 시스템에서 알림을 담당 > 알림을 등록하는 코드가 필요
+    
+    
+    /*
+     1. 뱃지 제거? > 언제 제거하는게 맞을까?
+     2. 노티 제거? > 노티의 유효 기간은? > 카톡(오픈채팅, 단톡)
+     3. 포그라운드 수신? > 
+     */
+    
     func sendNotification() {
         let notificationContent = UNMutableNotificationContent()
         
@@ -44,12 +52,12 @@ class LocationViewController: UIViewController {
         
         // 언제 보낼 것인가? 1. 시간 간격 2. 캘린더 3. 위치에 따라 설정 가능
         // 시간 간격은 60초 이상 설정해야 반복 가능
-//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2, repeats: false)
         
-        var dateComponents = DateComponents()
-        dateComponents.minute = 15
-        
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+//        var dateComponents = DateComponents()
+//        dateComponents.minute = 15
+//
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         
         // content와 trigger을 담아 알림을 요청
         // identifier: 여러개를 다르게 관리할 것인지 아니면 하나만 관리할 것인지
