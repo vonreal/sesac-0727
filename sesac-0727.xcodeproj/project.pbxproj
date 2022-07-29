@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76111DA328935D3C00F5683C /* LocationViewController.swift */; };
 		7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7624105828928353005AFE3F /* 0727-Assignment.storyboard */; };
 		7624105B28928559005AFE3F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624105A28928559005AFE3F /* WebViewController.swift */; };
 		76563BBD28920CCD008F2CE1 /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76111DA328935D3C00F5683C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		7624105828928353005AFE3F /* 0727-Assignment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "0727-Assignment.storyboard"; sourceTree = "<group>"; };
 		7624105A28928559005AFE3F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				76BE59662890DDC000DD5074 /* SceneDelegate.swift */,
 				76BE59682890DDC000DD5074 /* ViewController.swift */,
 				76BE596A2890DDC000DD5074 /* Main.storyboard */,
+				76111DA328935D3C00F5683C /* LocationViewController.swift */,
 				76BE59802890E5D200DD5074 /* ListTableViewCell.swift */,
 				76BE59782890E1F800DD5074 /* SearchViewController.swift */,
 				76BE59842890ED7E00DD5074 /* ListTableViewCell.xib */,
@@ -182,6 +185,7 @@
 				76BE59792890E1F800DD5074 /* SearchViewController.swift in Sources */,
 				7624105B28928559005AFE3F /* WebViewController.swift in Sources */,
 				76563BBF2892236C008F2CE1 /* LottoViewController.swift in Sources */,
+				76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */,
 				76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */,
 				76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */,
 				76563BBD28920CCD008F2CE1 /* ViewPresentableProtocol.swift in Sources */,
