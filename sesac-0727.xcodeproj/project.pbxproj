@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76111DA328935D3C00F5683C /* LocationViewController.swift */; };
+		76111DB1289384C800F5683C /* SCDream1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DA8289384C800F5683C /* SCDream1.otf */; };
+		76111DB4289384C800F5683C /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DAB289384C800F5683C /* SCDream3.otf */; };
+		76111DB5289384C800F5683C /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DAC289384C800F5683C /* SCDream2.otf */; };
+		76111DB82893874200F5683C /* HBIOS-SYS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DB72893874200F5683C /* HBIOS-SYS.ttf */; };
 		7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7624105828928353005AFE3F /* 0727-Assignment.storyboard */; };
 		7624105B28928559005AFE3F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624105A28928559005AFE3F /* WebViewController.swift */; };
 		76563BBD28920CCD008F2CE1 /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		76111DA328935D3C00F5683C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		76111DA8289384C800F5683C /* SCDream1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream1.otf; sourceTree = "<group>"; };
+		76111DAB289384C800F5683C /* SCDream3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream3.otf; sourceTree = "<group>"; };
+		76111DAC289384C800F5683C /* SCDream2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream2.otf; sourceTree = "<group>"; };
+		76111DB72893874200F5683C /* HBIOS-SYS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HBIOS-SYS.ttf"; sourceTree = "<group>"; };
 		7624105828928353005AFE3F /* 0727-Assignment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "0727-Assignment.storyboard"; sourceTree = "<group>"; };
 		7624105A28928559005AFE3F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 				76563BC228923AE0008F2CE1 /* WebViewViewController.swift */,
 				7624105828928353005AFE3F /* 0727-Assignment.storyboard */,
 				7624105A28928559005AFE3F /* WebViewController.swift */,
+				76111DA8289384C800F5683C /* SCDream1.otf */,
+				76111DAC289384C800F5683C /* SCDream2.otf */,
+				76111DAB289384C800F5683C /* SCDream3.otf */,
+				76111DB72893874200F5683C /* HBIOS-SYS.ttf */,
 			);
 			path = "sesac-0727";
 			sourceTree = "<group>";
@@ -165,11 +177,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76111DB82893874200F5683C /* HBIOS-SYS.ttf in Resources */,
 				76BE59712890DDC100DD5074 /* LaunchScreen.storyboard in Resources */,
+				76111DB5289384C800F5683C /* SCDream2.otf in Resources */,
+				76111DB1289384C800F5683C /* SCDream1.otf in Resources */,
 				7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */,
 				76BE59852890ED7E00DD5074 /* ListTableViewCell.xib in Resources */,
 				76BE596E2890DDC100DD5074 /* Assets.xcassets in Resources */,
 				76BE596C2890DDC000DD5074 /* Main.storyboard in Resources */,
+				76111DB4289384C800F5683C /* SCDream3.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

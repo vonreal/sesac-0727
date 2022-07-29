@@ -317,6 +317,14 @@
                                     <action selector="noticationButtonClicked:" destination="ma6-Hg-KSQ" eventType="touchUpInside" id="gOz-Ij-1MZ"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="몽그리 백작" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qJx-Pq-dkb">
+                                <rect key="frame" x="87" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UhX-2C-q79"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -326,6 +334,9 @@
                             <constraint firstItem="eiz-HY-pfp" firstAttribute="leading" secondItem="UhX-2C-q79" secondAttribute="leading" constant="20" id="Xyu-r1-I73"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exTextView" destination="qJx-Pq-dkb" id="0yB-dP-TbD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="map-sh-ZrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

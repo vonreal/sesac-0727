@@ -12,8 +12,18 @@ class LocationViewController: UIViewController {
     // Notification - 1. Local Notification을 담당하는 객체 생성
     let notificationCenter = UNUserNotificationCenter.current()
     
+    @IBOutlet weak var exTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 커스텀 폰트 -> 폰트 네임 확인
+        for family in UIFont.familyNames {
+            print("======\(family)=======")
+            for font in UIFont.fontNames(forFamilyName: family) {
+                print(font)
+            }
+        }
+        exTextView.font = UIFont(name: "S-CoreDream-3Light", size: 14)
     }
     
     @IBAction func noticationButtonClicked(_ sender: UIButton) {
@@ -37,9 +47,22 @@ class LocationViewController: UIViewController {
     
     
     /*
+     - 권한 허용 해야만 알림이 온다.
+     - 권한 허용 문구 시스템적으로 최초 한 번만 뜬다.
+     - 허용 안 된 경우 애플 설정으로 직접 유도하는 코드를 구성해야 한다.
+     
+     - 기본적으로 알림은 포그라운드에서 수신되지 않는다.
+     - 로컬 알림에서 60초 이상 반복 가능 / 갯수 제한 64개 / 커스텀 사운드 30초
+     
+     
      1. 뱃지 제거? > 언제 제거하는게 맞을까?
      2. 노티 제거? > 노티의 유효 기간은? > 카톡(오픈채팅, 단톡)
-     3. 포그라운드 수신? > 
+     3. 포그라운드 수신? > 딜리게이트 메서드로 해결!
+     
+     +a
+    - 노티는 앱 실행이 기본인데, 특정 노티를 클릭할 때 특정 화면으로 가고 싶다면?
+    - 포그라운드 수신, 특정 화면에서는 안받고 특정 조건에 대해서만 포그라운드 수신을 하고 싶다면?
+    - iOS 15 집중모드 등 5~6 우선순위 존재!
      */
     
     func sendNotification() {
