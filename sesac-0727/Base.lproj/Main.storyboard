@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iFN-dG-4fg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Ki-yk-efS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -69,6 +69,12 @@
                                     <segue destination="r9m-t4-IHm" kind="presentation" id="0re-eV-ti9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixz-DB-vie">
+                                <rect key="frame" x="165" y="537" width="85" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="0801 과제"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EOd-fH-xua"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -92,6 +98,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0or-R5-Hwo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1114" y="976"/>
+        </scene>
+        <!--RecommendRandomBeer-->
+        <scene sceneID="pto-iX-n2v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RecommendRandomBeer" id="qW6-oS-2eQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxh-sN-wtw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="1056"/>
         </scene>
         <!--Lotto View Controller-->
         <scene sceneID="MgE-aG-JCU">

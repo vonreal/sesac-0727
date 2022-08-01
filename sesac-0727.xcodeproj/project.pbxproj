@@ -23,6 +23,15 @@
 		767B67E128975FAD0032C561 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767B67E028975FAD0032C561 /* UserDefaultsHelper.swift */; };
 		767B67E428977CE30032C561 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 767B67E328977CE30032C561 /* Alamofire */; };
 		767B67E728977CF90032C561 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 767B67E628977CF90032C561 /* SwiftyJSON */; };
+		76A560E22897D2C4007159FB /* RecommendRandomBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A560E12897D2C4007159FB /* RecommendRandomBeerViewController.swift */; };
+		76A560E62897FC19007159FB /* RecommendRandomBeer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A560E52897FC19007159FB /* RecommendRandomBeer.storyboard */; };
+		76A560EA2897FC40007159FB /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A560E92897FC40007159FB /* Beer.swift */; };
+		76A560EC2897FC50007159FB /* DefaultColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A560EB2897FC50007159FB /* DefaultColor.swift */; };
+		76A560EF2898063F007159FB /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A560EE2898063F007159FB /* UILabel+Extension.swift */; };
+		76A560F128980CF7007159FB /* canela_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76A560F028980CF7007159FB /* canela_bold.otf */; };
+		76A560F328980DC7007159FB /* Ghanachocolate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76A560F228980DC7007159FB /* Ghanachocolate.ttf */; };
+		76A560F528980EEE007159FB /* BMDOHYEON_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76A560F428980EEE007159FB /* BMDOHYEON_otf.otf */; };
+		76A560F8289814F8007159FB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 76A560F7289814F8007159FB /* Kingfisher */; };
 		76BE59652890DDC000DD5074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59642890DDC000DD5074 /* AppDelegate.swift */; };
 		76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59662890DDC000DD5074 /* SceneDelegate.swift */; };
 		76BE59692890DDC000DD5074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59682890DDC000DD5074 /* ViewController.swift */; };
@@ -49,6 +58,14 @@
 		767B67DB2897527D0032C561 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
 		767B67DE289757D20032C561 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		767B67E028975FAD0032C561 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		76A560E12897D2C4007159FB /* RecommendRandomBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendRandomBeerViewController.swift; sourceTree = "<group>"; };
+		76A560E52897FC19007159FB /* RecommendRandomBeer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecommendRandomBeer.storyboard; sourceTree = "<group>"; };
+		76A560E92897FC40007159FB /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		76A560EB2897FC50007159FB /* DefaultColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultColor.swift; sourceTree = "<group>"; };
+		76A560EE2898063F007159FB /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		76A560F028980CF7007159FB /* canela_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = canela_bold.otf; sourceTree = "<group>"; };
+		76A560F228980DC7007159FB /* Ghanachocolate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ghanachocolate.ttf; sourceTree = "<group>"; };
+		76A560F428980EEE007159FB /* BMDOHYEON_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMDOHYEON_otf.otf; sourceTree = "<group>"; };
 		76BE59612890DDC000DD5074 /* sesac-0727.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sesac-0727.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BE59642890DDC000DD5074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BE59662890DDC000DD5074 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A560F8289814F8007159FB /* Kingfisher in Frameworks */,
 				767B67E728977CF90032C561 /* SwiftyJSON in Frameworks */,
 				767B67E428977CE30032C561 /* Alamofire in Frameworks */,
 			);
@@ -94,6 +112,42 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		76A560E02897D2B1007159FB /* RecommendRandomBeer */ = {
+			isa = PBXGroup;
+			children = (
+				76A560ED2898062F007159FB /* Extension */,
+				76A560E82897FC31007159FB /* Model */,
+				76A560E72897FC24007159FB /* Storyboard */,
+				76A560E12897D2C4007159FB /* RecommendRandomBeerViewController.swift */,
+			);
+			path = RecommendRandomBeer;
+			sourceTree = "<group>";
+		};
+		76A560E72897FC24007159FB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				76A560E52897FC19007159FB /* RecommendRandomBeer.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		76A560E82897FC31007159FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76A560E92897FC40007159FB /* Beer.swift */,
+				76A560EB2897FC50007159FB /* DefaultColor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76A560ED2898062F007159FB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				76A560EE2898063F007159FB /* UILabel+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		76BE59582890DDC000DD5074 = {
 			isa = PBXGroup;
 			children = (
@@ -114,13 +168,17 @@
 		76BE59632890DDC000DD5074 /* sesac-0727 */ = {
 			isa = PBXGroup;
 			children = (
+				76A560E02897D2B1007159FB /* RecommendRandomBeer */,
 				76111DA8289384C800F5683C /* SCDream1.otf */,
 				76111DAC289384C800F5683C /* SCDream2.otf */,
 				76111DAB289384C800F5683C /* SCDream3.otf */,
+				76A560F028980CF7007159FB /* canela_bold.otf */,
 				76BE59722890DDC100DD5074 /* Info.plist */,
+				76A560F428980EEE007159FB /* BMDOHYEON_otf.otf */,
 				7624105828928353005AFE3F /* 0727-Assignment.storyboard */,
 				76BE59642890DDC000DD5074 /* AppDelegate.swift */,
 				76BE59802890E5D200DD5074 /* ListTableViewCell.swift */,
+				76A560F228980DC7007159FB /* Ghanachocolate.ttf */,
 				76111DA328935D3C00F5683C /* LocationViewController.swift */,
 				76563BBE2892236C008F2CE1 /* LottoViewController.swift */,
 				76BE59662890DDC000DD5074 /* SceneDelegate.swift */,
@@ -159,6 +217,7 @@
 			packageProductDependencies = (
 				767B67E328977CE30032C561 /* Alamofire */,
 				767B67E628977CF90032C561 /* SwiftyJSON */,
+				76A560F7289814F8007159FB /* Kingfisher */,
 			);
 			productName = "sesac-0727";
 			productReference = 76BE59612890DDC000DD5074 /* sesac-0727.app */;
@@ -191,6 +250,7 @@
 			packageReferences = (
 				767B67E228977CE30032C561 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				767B67E528977CF80032C561 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				76A560F6289814F8007159FB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 76BE59622890DDC000DD5074 /* Products */;
 			projectDirPath = "";
@@ -208,6 +268,8 @@
 			files = (
 				76111DB82893874200F5683C /* HBIOS-SYS.ttf in Resources */,
 				76BE59712890DDC100DD5074 /* LaunchScreen.storyboard in Resources */,
+				76A560E62897FC19007159FB /* RecommendRandomBeer.storyboard in Resources */,
+				76A560F528980EEE007159FB /* BMDOHYEON_otf.otf in Resources */,
 				76111DB5289384C800F5683C /* SCDream2.otf in Resources */,
 				76111DB1289384C800F5683C /* SCDream1.otf in Resources */,
 				7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */,
@@ -215,6 +277,8 @@
 				76BE596E2890DDC100DD5074 /* Assets.xcassets in Resources */,
 				76BE596C2890DDC000DD5074 /* Main.storyboard in Resources */,
 				76111DB4289384C800F5683C /* SCDream3.otf in Resources */,
+				76A560F128980CF7007159FB /* canela_bold.otf in Resources */,
+				76A560F328980DC7007159FB /* Ghanachocolate.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,11 +292,15 @@
 				767B67E128975FAD0032C561 /* UserDefaultsHelper.swift in Sources */,
 				76BE59692890DDC000DD5074 /* ViewController.swift in Sources */,
 				76BE59652890DDC000DD5074 /* AppDelegate.swift in Sources */,
+				76A560EA2897FC40007159FB /* Beer.swift in Sources */,
 				76BE59792890E1F800DD5074 /* SearchViewController.swift in Sources */,
 				7624105B28928559005AFE3F /* WebViewController.swift in Sources */,
+				76A560EC2897FC50007159FB /* DefaultColor.swift in Sources */,
 				76563BBF2892236C008F2CE1 /* LottoViewController.swift in Sources */,
+				76A560EF2898063F007159FB /* UILabel+Extension.swift in Sources */,
 				767B67DC2897527D0032C561 /* ReusableViewProtocol.swift in Sources */,
 				76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */,
+				76A560E22897D2C4007159FB /* RecommendRandomBeerViewController.swift in Sources */,
 				76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */,
 				76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */,
 				767B67DF289757D20032C561 /* Constant.swift in Sources */,
@@ -390,7 +458,7 @@
 				INFOPLIST_FILE = "sesac-0727/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = RecommendRandomBeer;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -419,7 +487,7 @@
 				INFOPLIST_FILE = "sesac-0727/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = RecommendRandomBeer;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -476,6 +544,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		76A560F6289814F8007159FB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -488,6 +564,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 767B67E528977CF80032C561 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		76A560F7289814F8007159FB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76A560F6289814F8007159FB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
