@@ -28,9 +28,10 @@ class ViewController: UIViewController, ViewPrsentableProtocol{
         print("hi")
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UserDefaultHelper.standard.nickname = "고래밥"
     }
 
 
