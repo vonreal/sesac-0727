@@ -21,6 +21,8 @@
 		767B67DC2897527D0032C561 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767B67DB2897527D0032C561 /* ReusableViewProtocol.swift */; };
 		767B67DF289757D20032C561 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767B67DE289757D20032C561 /* Constant.swift */; };
 		767B67E128975FAD0032C561 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767B67E028975FAD0032C561 /* UserDefaultsHelper.swift */; };
+		767B67E428977CE30032C561 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 767B67E328977CE30032C561 /* Alamofire */; };
+		767B67E728977CF90032C561 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 767B67E628977CF90032C561 /* SwiftyJSON */; };
 		76BE59652890DDC000DD5074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59642890DDC000DD5074 /* AppDelegate.swift */; };
 		76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59662890DDC000DD5074 /* SceneDelegate.swift */; };
 		76BE59692890DDC000DD5074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BE59682890DDC000DD5074 /* ViewController.swift */; };
@@ -66,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767B67E728977CF90032C561 /* SwiftyJSON in Frameworks */,
+				767B67E428977CE30032C561 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				76FBE1F7289118C500FA3F9F /* 0726-sesac.playground */,
-				76BE59632890DDC000DD5074 /* sesac-0727 */,
 				76BE59622890DDC000DD5074 /* Products */,
+				76BE59632890DDC000DD5074 /* sesac-0727 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,28 +114,28 @@
 		76BE59632890DDC000DD5074 /* sesac-0727 */ = {
 			isa = PBXGroup;
 			children = (
-				767B67DD2897577B0032C561 /* Constant */,
-				76563BBB28920C9F008F2CE1 /* Protocol */,
-				76BE59642890DDC000DD5074 /* AppDelegate.swift */,
-				76BE59662890DDC000DD5074 /* SceneDelegate.swift */,
-				76BE59682890DDC000DD5074 /* ViewController.swift */,
-				76BE596A2890DDC000DD5074 /* Main.storyboard */,
-				76111DA328935D3C00F5683C /* LocationViewController.swift */,
-				76BE59802890E5D200DD5074 /* ListTableViewCell.swift */,
-				76BE59782890E1F800DD5074 /* SearchViewController.swift */,
-				76BE59842890ED7E00DD5074 /* ListTableViewCell.xib */,
-				76BE596D2890DDC100DD5074 /* Assets.xcassets */,
-				76BE596F2890DDC100DD5074 /* LaunchScreen.storyboard */,
-				76BE59722890DDC100DD5074 /* Info.plist */,
-				76563BBE2892236C008F2CE1 /* LottoViewController.swift */,
-				76563BC028923067008F2CE1 /* TranslateViewController.swift */,
-				76563BC228923AE0008F2CE1 /* WebViewViewController.swift */,
-				7624105828928353005AFE3F /* 0727-Assignment.storyboard */,
-				7624105A28928559005AFE3F /* WebViewController.swift */,
 				76111DA8289384C800F5683C /* SCDream1.otf */,
 				76111DAC289384C800F5683C /* SCDream2.otf */,
 				76111DAB289384C800F5683C /* SCDream3.otf */,
+				76BE59722890DDC100DD5074 /* Info.plist */,
+				7624105828928353005AFE3F /* 0727-Assignment.storyboard */,
+				76BE59642890DDC000DD5074 /* AppDelegate.swift */,
+				76BE59802890E5D200DD5074 /* ListTableViewCell.swift */,
+				76111DA328935D3C00F5683C /* LocationViewController.swift */,
+				76563BBE2892236C008F2CE1 /* LottoViewController.swift */,
+				76BE59662890DDC000DD5074 /* SceneDelegate.swift */,
+				76BE59782890E1F800DD5074 /* SearchViewController.swift */,
+				76563BC028923067008F2CE1 /* TranslateViewController.swift */,
+				76BE59682890DDC000DD5074 /* ViewController.swift */,
+				7624105A28928559005AFE3F /* WebViewController.swift */,
+				76563BC228923AE0008F2CE1 /* WebViewViewController.swift */,
 				76111DB72893874200F5683C /* HBIOS-SYS.ttf */,
+				76BE596D2890DDC100DD5074 /* Assets.xcassets */,
+				76BE59842890ED7E00DD5074 /* ListTableViewCell.xib */,
+				767B67DD2897577B0032C561 /* Constant */,
+				76BE596F2890DDC100DD5074 /* LaunchScreen.storyboard */,
+				76BE596A2890DDC000DD5074 /* Main.storyboard */,
+				76563BBB28920C9F008F2CE1 /* Protocol */,
 			);
 			path = "sesac-0727";
 			sourceTree = "<group>";
@@ -152,6 +156,10 @@
 			dependencies = (
 			);
 			name = "sesac-0727";
+			packageProductDependencies = (
+				767B67E328977CE30032C561 /* Alamofire */,
+				767B67E628977CF90032C561 /* SwiftyJSON */,
+			);
 			productName = "sesac-0727";
 			productReference = 76BE59612890DDC000DD5074 /* sesac-0727.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +188,10 @@
 				Base,
 			);
 			mainGroup = 76BE59582890DDC000DD5074;
+			packageReferences = (
+				767B67E228977CE30032C561 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				767B67E528977CF80032C561 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 76BE59622890DDC000DD5074 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -446,6 +458,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		767B67E228977CE30032C561 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		767B67E528977CF80032C561 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		767B67E328977CE30032C561 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 767B67E228977CE30032C561 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		767B67E628977CF90032C561 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 767B67E528977CF80032C561 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76BE59592890DDC000DD5074 /* Project object */;
 }
