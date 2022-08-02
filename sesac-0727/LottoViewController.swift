@@ -20,7 +20,8 @@ class LottoViewController: UIViewController{
     var lottoPickerView = UIPickerView()
     
     let numberList: [Int] = Array(1...1025).reversed()
-    
+    var date: String?
+    var currentHwe = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,9 +31,42 @@ class LottoViewController: UIViewController{
         
         lottoPickerView.delegate = self
         lottoPickerView.dataSource = self
+        
+        
+        // 1. 오늘날짜 받아오기
+        requestLotto(number: currentHwe, flag: true)
     }
     
-    func requestLotto(number: Int) {
+
+    func getCurrentDate() {
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd"
+        
+        if let dd = date {
+            if let recentDate = format.date(from: dd) {
+                let calender = Calendar.current
+                
+                let date1 = calender.startOfDay(for: Date.now)
+                let date2 = calender.startOfDay(for: recentDate)
+                
+                let compo = calender.dateComponents([.day], from: date2, to:date1)
+                
+                if let difDay = compo.day {
+                    var week = 0
+                    if difDay < 0 {
+                        week = (difDay / 7) * -1
+                    } else {
+                        week = difDay / 7
+                    }
+                    requestLotto(number: currentHwe + week, flag: false)
+                }
+            }
+        }
+    }
+    
+    
+    func requestLotto(number: Int, flag: Bool){
+        print("회차: \(number)")
         let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(number)"
         
         // Alamofire -> AF로 접두어 변경
@@ -41,11 +75,8 @@ class LottoViewController: UIViewController{
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                print("JSON: \(json)")
-                
-                
-                let date = json["drwNoDate"].string
-                self.numberTextField.text = date
+                self.date = json["drwNoDate"].string
+                self.numberTextField.text = self.date
                 
                 var index = 1
                 for label in self.lottoNumberLabels {
@@ -55,6 +86,11 @@ class LottoViewController: UIViewController{
                     }
                     index += 1
                 }
+                if flag {
+                    self.getCurrentDate()
+                }
+                break
+                    
             case .failure(let error):
                 print(error)
             }
@@ -74,7 +110,7 @@ extension LottoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        requestLotto(number: numberList[row])
+        requestLotto(number: numberList[row], flag: false)
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
