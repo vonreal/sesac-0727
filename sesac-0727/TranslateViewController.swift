@@ -50,13 +50,19 @@ class TranslateViewController: UIViewController {
                     } else {
                         self.resultTextView.text = json["errorMessage"].string
                     }
-                    
+                    break
                     
                 case .failure(let error):
                     print(error)
+                    break
                 }
             }
     }
+    
+    @IBAction func translateButtonClicked(_ sender: UIButton) {
+        requestTranslateData(data: userInputTextView.text)
+    }
+    
 }
 
 
@@ -86,8 +92,6 @@ extension TranslateViewController: UITextViewDelegate{
         if textView.text.isEmpty {
             textView.text = textViewPlaceholderText
             textView.textColor = .lightGray
-        } else {
-            requestTranslateData(data: textView.text)
         }
     }
     
