@@ -62,7 +62,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func requestBoxOffice(text: String) {
-        let url = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=\(myKey)&targetDt=\(text)"
+        let url = EndPoint.boxOfficeURL + "key=\(APIKey.BOXOFFICE)&targetDt=\(text)"
         
         self.list.removeAll() // 언제 이 아이를 넣어줄것이냐
         AF.request(url, method: .get).validate().responseJSON { response in

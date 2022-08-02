@@ -7,6 +7,9 @@
 
 import UIKit
 
+import Alamofire
+import SwiftyJSON
+
 // 텍스트필드 관련
 // UIResponderChain > resignFirstResponder() / becomeFirstResponder()
 
@@ -14,6 +17,7 @@ class TranslateViewController: UIViewController {
 
     @IBOutlet weak var userInputTextView: UITextView!
     @IBOutlet weak var charCount: UILabel!
+    @IBOutlet weak var resultTextView: UITextView!
     
     let textViewPlaceholderText = "번역할 문장을 입력해 주세요."
     
@@ -23,9 +27,38 @@ class TranslateViewController: UIViewController {
         userInputTextView.delegate = self
         
         userInputTextView.text = textViewPlaceholderText
+        userInputTextView.font = UIFont(name: "ghanachoco", size: 30)
         userInputTextView.textColor = .lightGray
     }
+    func requestTranslateData(data: String) {
+        let url = EndPoint.translateURL
+        
+        let paramter: Parameters = ["source": "ko", "target":"en", "text":data]
+        let header: HTTPHeaders = ["X-Naver-Client-Id":APIKey.NAVER_ID, "X-Naver-Client-Secret":APIKey.NAVER_PW]
+        
+        AF.request(url, method: .post, parameters: paramter, headers: header)
+            .validate(statusCode: 200...500)
+            .responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    print("JSON: \(json)")
+                    
+                    let statusCode = response.response?.statusCode ?? 500
+                    if statusCode == 200 {
+                        self.resultTextView.text = json["message"]["result"]["translatedText"].string
+                    } else {
+                        self.resultTextView.text = json["errorMessage"].string
+                    }
+                    
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
+    }
 }
+
 
 extension TranslateViewController: UITextViewDelegate{
     
@@ -53,6 +86,8 @@ extension TranslateViewController: UITextViewDelegate{
         if textView.text.isEmpty {
             textView.text = textViewPlaceholderText
             textView.textColor = .lightGray
+        } else {
+            requestTranslateData(data: textView.text)
         }
     }
     
