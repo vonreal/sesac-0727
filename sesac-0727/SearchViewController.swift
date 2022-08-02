@@ -7,45 +7,109 @@
 
 import UIKit
 
+import Alamofire
+import SwiftyJSON
+
 /*
   Swift Protocol
   - Delegate
   - Datasource
  
   1. 왼팔/오른팔
+  2. 테이블뷰 아웃렛 연결
+  3. 1 + 2
+ */
+
+/**
+  각 json
  */
 
 // 프로토콜은 상속 다음에 채택되어야 한다.
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTableView: UITableView!
+    
+    //BoxOffice 배열
+    var list: [BoxOfficeModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        view.backgroundColor = .black
         
         // 연결고리 작업: 테이블뷰가 해야 할 역할 > 뷰 컨트롤러에게 요청
-        searchTableView.delegate = self
-        searchTableView.dataSource = self
+        connectDelegateAndDataSource()
         
         // 테이블뷰뷰가 사용할 테이블 뷰 셀(XIB) 등록
         // XIB: XML Inteface Builder <= 예전에는 NIB이라는 타입 사용
-        searchTableView.register(UINib(nibName: ListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ListTableViewCell.identifier)
+        registerTableViewCell()
         
+        //0802 실습
+        requestBoxOffice(text: "20220801")
+        
+    }
+    
+    func connectDelegateAndDataSource() {
+        searchTableView.delegate = self
+        searchTableView.dataSource = self
+        
+        searchBar.delegate = self
+    }
+    func registerTableViewCell() {
+        searchTableView.register(UINib(nibName: ListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ListTableViewCell.identifier)
         searchTableView.backgroundColor = .clear
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+    func requestBoxOffice(text: String) {
+        let url = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=\(myKey)&targetDt=\(text)"
+        
+        self.list.removeAll() // 언제 이 아이를 넣어줄것이냐
+        AF.request(url, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print("JSON: \(json)")
+                
+                for movie in json["boxOfficeResult"]["dailyBoxOfficeList"].arrayValue {
+                    let movieNm = movie["movieNm"].stringValue
+                    let openDt = movie["openDt"].stringValue
+                    let audiAcc = movie["audiAcc"].stringValue
+                    
+                    let data = BoxOfficeModel(movieTitle: movieNm, releaseDate: openDt, totalCount: audiAcc)
+                    self.list.append(data)
+                }
+                
+                
+                self.searchTableView.reloadData()
+                print(self.list)
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ListTableViewCell.identifier, for: indexPath) as? ListTableViewCell else { return UITableViewCell() }
         
-        cell.titleLabel.font = .boldSystemFont(ofSize: 22)
-        cell.titleLabel.text = "HELLO"
+        cell.titleLabel.font = UIFont(name: "S-CoreDream-3Light", size: 20)
+        cell.titleLabel.text = "\(list[indexPath.row].movieTitle): \(list[indexPath.row].releaseDate)"
+        cell.titleLabel.textColor = .white
         cell.backgroundColor = .clear
         
         return cell
+    }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let text = searchBar.text {
+            requestBoxOffice(text: text)
+        }
     }
 }
