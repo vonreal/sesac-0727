@@ -75,6 +75,7 @@ class LottoViewController: UIViewController{
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
+                
                 self.date = json["drwNoDate"].string
                 self.numberTextField.text = self.date
                 
@@ -86,6 +87,7 @@ class LottoViewController: UIViewController{
                     }
                     index += 1
                 }
+                
                 if flag {
                     self.getCurrentDate()
                 }
