@@ -21,6 +21,8 @@
 		7628153F2898BD1F009CA303 /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */; };
 		763AB53B289A6B3600C0B9CE /* ImageSearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763AB53A289A6B3600C0B9CE /* ImageSearchCollectionViewCell.xib */; };
 		763AB53D289A6B8F00C0B9CE /* ImageSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AB53C289A6B8F00C0B9CE /* ImageSearchCollectionViewCell.swift */; };
+		763AB573289ABF0A00C0B9CE /* BeerListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AB572289ABF0A00C0B9CE /* BeerListCollectionViewController.swift */; };
+		763AB575289ABF2700C0B9CE /* BeerListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AB574289ABF2700C0B9CE /* BeerListCollectionViewCell.swift */; };
 		76563BBD28920CCD008F2CE1 /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */; };
 		76563BBF2892236C008F2CE1 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BBE2892236C008F2CE1 /* LottoViewController.swift */; };
 		76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BC028923067008F2CE1 /* TranslateViewController.swift */; };
@@ -65,6 +67,8 @@
 		7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
 		763AB53A289A6B3600C0B9CE /* ImageSearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSearchCollectionViewCell.xib; sourceTree = "<group>"; };
 		763AB53C289A6B8F00C0B9CE /* ImageSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		763AB572289ABF0A00C0B9CE /* BeerListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCollectionViewController.swift; sourceTree = "<group>"; };
+		763AB574289ABF2700C0B9CE /* BeerListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCollectionViewCell.swift; sourceTree = "<group>"; };
 		76563BBC28920CCD008F2CE1 /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
 		76563BBE2892236C008F2CE1 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		76563BC028923067008F2CE1 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 			children = (
 				761C705C289A065E00652036 /* BeerListTableViewController.swift */,
 				761C705E289A067E00652036 /* BeerListTableViewCell.swift */,
+				763AB572289ABF0A00C0B9CE /* BeerListCollectionViewController.swift */,
+				763AB574289ABF2700C0B9CE /* BeerListCollectionViewCell.swift */,
 			);
 			path = BeerList;
 			sourceTree = "<group>";
@@ -364,10 +370,12 @@
 				76BE59652890DDC000DD5074 /* AppDelegate.swift in Sources */,
 				76A560EA2897FC40007159FB /* Beer.swift in Sources */,
 				76BE59792890E1F800DD5074 /* SearchViewController.swift in Sources */,
+				763AB573289ABF0A00C0B9CE /* BeerListCollectionViewController.swift in Sources */,
 				7624105B28928559005AFE3F /* WebViewController.swift in Sources */,
 				763AB53D289A6B8F00C0B9CE /* ImageSearchCollectionViewCell.swift in Sources */,
 				76A560EC2897FC50007159FB /* DefaultColor.swift in Sources */,
 				76563BBF2892236C008F2CE1 /* LottoViewController.swift in Sources */,
+				763AB575289ABF2700C0B9CE /* BeerListCollectionViewCell.swift in Sources */,
 				761C705B289A000900652036 /* Constant.swift in Sources */,
 				76A560EF2898063F007159FB /* UILabel+Extension.swift in Sources */,
 				767B67DC2897527D0032C561 /* ReusableViewProtocol.swift in Sources */,
