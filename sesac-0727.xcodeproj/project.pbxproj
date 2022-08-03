@@ -12,7 +12,6 @@
 		76111DB4289384C800F5683C /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DAB289384C800F5683C /* SCDream3.otf */; };
 		76111DB5289384C800F5683C /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DAC289384C800F5683C /* SCDream2.otf */; };
 		76111DB82893874200F5683C /* HBIOS-SYS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DB72893874200F5683C /* HBIOS-SYS.ttf */; };
-		761C70592899FF8600652036 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C70582899FF8600652036 /* Constant.swift */; };
 		7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7624105828928353005AFE3F /* 0727-Assignment.storyboard */; };
 		7624105B28928559005AFE3F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624105A28928559005AFE3F /* WebViewController.swift */; };
 		7628153F2898BD1F009CA303 /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */; };
@@ -51,7 +50,6 @@
 		76111DAC289384C800F5683C /* SCDream2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream2.otf; sourceTree = "<group>"; };
 		76111DB72893874200F5683C /* HBIOS-SYS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HBIOS-SYS.ttf"; sourceTree = "<group>"; };
 		761C70572899FF6300652036 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		761C70582899FF8600652036 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7624105828928353005AFE3F /* 0727-Assignment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "0727-Assignment.storyboard"; sourceTree = "<group>"; };
 		7624105A28928559005AFE3F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				767B67E028975FAD0032C561 /* UserDefaultsHelper.swift */,
-				761C70582899FF8600652036 /* Constant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -302,7 +299,6 @@
 				7624105B28928559005AFE3F /* WebViewController.swift in Sources */,
 				76A560EC2897FC50007159FB /* DefaultColor.swift in Sources */,
 				76563BBF2892236C008F2CE1 /* LottoViewController.swift in Sources */,
-				761C70592899FF8600652036 /* Constant.swift in Sources */,
 				76A560EF2898063F007159FB /* UILabel+Extension.swift in Sources */,
 				767B67DC2897527D0032C561 /* ReusableViewProtocol.swift in Sources */,
 				76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */,
