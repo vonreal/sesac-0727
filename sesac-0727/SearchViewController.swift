@@ -45,8 +45,15 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // XIB: XML Inteface Builder <= 예전에는 NIB이라는 타입 사용
         registerTableViewCell()
         
+        // 어제로 가기
+        let format = DateFormatter()
+        format.dateFormat = "yyyyMMdd" // TMI -> "yyyyMMdd" "YYYYMMdd"
+        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date())
+        let dateResult = format.string(from: yesterday!)
+        print(dateResult)
+        
         //0802 실습
-        requestBoxOffice(text: "20220801")
+        requestBoxOffice(text: dateResult)
         
     }
     
@@ -98,7 +105,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ListTableViewCell.identifier, for: indexPath) as? ListTableViewCell else { return UITableViewCell() }
         
         cell.titleLabel.font = UIFont(name: "S-CoreDream-3Light", size: 20)
-        cell.titleLabel.text = "\(list[indexPath.row].movieTitle): \(list[indexPath.row].releaseDate)"
+        cell.titleLabel.text = "\(list[indexPath.row].movieTitle): \(list[indexPath.row].releaseDate):\(list[indexPath.row].totalCount)"
         cell.titleLabel.textColor = .white
         cell.backgroundColor = .clear
         

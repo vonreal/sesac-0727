@@ -13,6 +13,9 @@
 		76111DB5289384C800F5683C /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DAC289384C800F5683C /* SCDream2.otf */; };
 		76111DB82893874200F5683C /* HBIOS-SYS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DB72893874200F5683C /* HBIOS-SYS.ttf */; };
 		761C705B289A000900652036 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C705A289A000900652036 /* Constant.swift */; };
+		761C705D289A065E00652036 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C705C289A065E00652036 /* BeerListTableViewController.swift */; };
+		761C705F289A067E00652036 /* BeerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C705E289A067E00652036 /* BeerListTableViewCell.swift */; };
+		761C7061289A095E00652036 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C7060289A095E00652036 /* ImageSearchViewController.swift */; };
 		7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7624105828928353005AFE3F /* 0727-Assignment.storyboard */; };
 		7624105B28928559005AFE3F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624105A28928559005AFE3F /* WebViewController.swift */; };
 		7628153F2898BD1F009CA303 /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */; };
@@ -52,6 +55,9 @@
 		76111DB72893874200F5683C /* HBIOS-SYS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HBIOS-SYS.ttf"; sourceTree = "<group>"; };
 		761C70572899FF6300652036 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		761C705A289A000900652036 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		761C705C289A065E00652036 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
+		761C705E289A067E00652036 /* BeerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewCell.swift; sourceTree = "<group>"; };
+		761C7060289A095E00652036 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
 		7624105828928353005AFE3F /* 0727-Assignment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "0727-Assignment.storyboard"; sourceTree = "<group>"; };
 		7624105A28928559005AFE3F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
@@ -97,6 +103,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		761C7062289A0E1600652036 /* ImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				761C7060289A095E00652036 /* ImageSearchViewController.swift */,
+			);
+			path = ImageSearch;
+			sourceTree = "<group>";
+		};
+		761C7063289A0E2B00652036 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				76A560F228980DC7007159FB /* Ghanachocolate.ttf */,
+				76111DB72893874200F5683C /* HBIOS-SYS.ttf */,
+				76111DAB289384C800F5683C /* SCDream3.otf */,
+				76111DAC289384C800F5683C /* SCDream2.otf */,
+				76111DA8289384C800F5683C /* SCDream1.otf */,
+				76A560F028980CF7007159FB /* canela_bold.otf */,
+				76A560F428980EEE007159FB /* BMDOHYEON_otf.otf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		761C7064289A0E4400652036 /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				76563BBE2892236C008F2CE1 /* LottoViewController.swift */,
+			);
+			path = Lotto;
+			sourceTree = "<group>";
+		};
+		761C7065289A0E9A00652036 /* NAVER API */ = {
+			isa = PBXGroup;
+			children = (
+				761C7066289A0EAB00652036 /* Translate */,
+				761C7062289A0E1600652036 /* ImageSearch */,
+			);
+			path = "NAVER API";
+			sourceTree = "<group>";
+		};
+		761C7066289A0EAB00652036 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				76563BC028923067008F2CE1 /* TranslateViewController.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		761C7067289A144100652036 /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				761C705C289A065E00652036 /* BeerListTableViewController.swift */,
+				761C705E289A067E00652036 /* BeerListTableViewCell.swift */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
 		76563BBB28920C9F008F2CE1 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +180,7 @@
 		76A560E02897D2B1007159FB /* RecommendRandomBeer */ = {
 			isa = PBXGroup;
 			children = (
+				761C7067289A144100652036 /* BeerList */,
 				76A560ED2898062F007159FB /* Extension */,
 				76A560E82897FC31007159FB /* Model */,
 				76A560E72897FC24007159FB /* Storyboard */,
@@ -172,33 +235,27 @@
 		76BE59632890DDC000DD5074 /* sesac-0727 */ = {
 			isa = PBXGroup;
 			children = (
-				76A560F428980EEE007159FB /* BMDOHYEON_otf.otf */,
-				76A560F028980CF7007159FB /* canela_bold.otf */,
-				76111DA8289384C800F5683C /* SCDream1.otf */,
-				76111DAC289384C800F5683C /* SCDream2.otf */,
-				76111DAB289384C800F5683C /* SCDream3.otf */,
 				76BE59722890DDC100DD5074 /* Info.plist */,
 				7624105828928353005AFE3F /* 0727-Assignment.storyboard */,
 				76BE59642890DDC000DD5074 /* AppDelegate.swift */,
+				7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */,
 				76BE59802890E5D200DD5074 /* ListTableViewCell.swift */,
 				76111DA328935D3C00F5683C /* LocationViewController.swift */,
-				76563BBE2892236C008F2CE1 /* LottoViewController.swift */,
 				76BE59662890DDC000DD5074 /* SceneDelegate.swift */,
 				76BE59782890E1F800DD5074 /* SearchViewController.swift */,
-				76563BC028923067008F2CE1 /* TranslateViewController.swift */,
 				76BE59682890DDC000DD5074 /* ViewController.swift */,
 				7624105A28928559005AFE3F /* WebViewController.swift */,
 				76563BC228923AE0008F2CE1 /* WebViewViewController.swift */,
-				76A560F228980DC7007159FB /* Ghanachocolate.ttf */,
-				76111DB72893874200F5683C /* HBIOS-SYS.ttf */,
 				76BE596D2890DDC100DD5074 /* Assets.xcassets */,
 				76BE59842890ED7E00DD5074 /* ListTableViewCell.xib */,
 				767B67DD2897577B0032C561 /* Constant */,
 				76BE596F2890DDC100DD5074 /* LaunchScreen.storyboard */,
+				761C7064289A0E4400652036 /* Lotto */,
 				76BE596A2890DDC000DD5074 /* Main.storyboard */,
+				761C7065289A0E9A00652036 /* NAVER API */,
 				76563BBB28920C9F008F2CE1 /* Protocol */,
 				76A560E02897D2B1007159FB /* RecommendRandomBeer */,
-				7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */,
+				761C7063289A0E2B00652036 /* Resource */,
 			);
 			path = "sesac-0727";
 			sourceTree = "<group>";
@@ -296,6 +353,7 @@
 			files = (
 				767B67E128975FAD0032C561 /* UserDefaultsHelper.swift in Sources */,
 				76BE59692890DDC000DD5074 /* ViewController.swift in Sources */,
+				761C705F289A067E00652036 /* BeerListTableViewCell.swift in Sources */,
 				76BE59652890DDC000DD5074 /* AppDelegate.swift in Sources */,
 				76A560EA2897FC40007159FB /* Beer.swift in Sources */,
 				76BE59792890E1F800DD5074 /* SearchViewController.swift in Sources */,
@@ -305,11 +363,13 @@
 				761C705B289A000900652036 /* Constant.swift in Sources */,
 				76A560EF2898063F007159FB /* UILabel+Extension.swift in Sources */,
 				767B67DC2897527D0032C561 /* ReusableViewProtocol.swift in Sources */,
+				761C705D289A065E00652036 /* BeerListTableViewController.swift in Sources */,
 				76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */,
 				76A560E22897D2C4007159FB /* RecommendRandomBeerViewController.swift in Sources */,
 				7628153F2898BD1F009CA303 /* BoxOfficeModel.swift in Sources */,
 				76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */,
 				76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */,
+				761C7061289A095E00652036 /* ImageSearchViewController.swift in Sources */,
 				76563BBD28920CCD008F2CE1 /* ViewPresentableProtocol.swift in Sources */,
 				76563BC328923AE0008F2CE1 /* WebViewViewController.swift in Sources */,
 				76BE59812890E5D200DD5074 /* ListTableViewCell.swift in Sources */,

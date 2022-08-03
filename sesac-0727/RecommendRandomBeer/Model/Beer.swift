@@ -8,7 +8,7 @@
 import Foundation
 
 struct Beer {
-    private init() {}
+//    private init() {}
     
     enum jsonKeys: String {
         case image_url = "image_url"
@@ -19,4 +19,10 @@ struct Beer {
     static var image_url: URL? = nil
     static var name: String? = nil
     static var description: String? = nil
+}
+
+struct BeerInfo {
+    var image_url: URL
+    var name: String
+    var description: String
 }

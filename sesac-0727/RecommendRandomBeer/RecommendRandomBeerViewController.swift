@@ -48,8 +48,6 @@ class RecommendRandomBeerViewController: UIViewController {
                 print(error)
             }
         }
-        
-
     }
     
     func parsingInfoInJson(json: JSON) {
