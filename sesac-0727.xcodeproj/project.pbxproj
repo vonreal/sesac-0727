@@ -12,6 +12,7 @@
 		76111DB4289384C800F5683C /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DAB289384C800F5683C /* SCDream3.otf */; };
 		76111DB5289384C800F5683C /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DAC289384C800F5683C /* SCDream2.otf */; };
 		76111DB82893874200F5683C /* HBIOS-SYS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DB72893874200F5683C /* HBIOS-SYS.ttf */; };
+		761C70592899FF8600652036 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761C70582899FF8600652036 /* Constant.swift */; };
 		7624105928928353005AFE3F /* 0727-Assignment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7624105828928353005AFE3F /* 0727-Assignment.storyboard */; };
 		7624105B28928559005AFE3F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624105A28928559005AFE3F /* WebViewController.swift */; };
 		7628153F2898BD1F009CA303 /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */; };
@@ -20,7 +21,6 @@
 		76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BC028923067008F2CE1 /* TranslateViewController.swift */; };
 		76563BC328923AE0008F2CE1 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76563BC228923AE0008F2CE1 /* WebViewViewController.swift */; };
 		767B67DC2897527D0032C561 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767B67DB2897527D0032C561 /* ReusableViewProtocol.swift */; };
-		767B67DF289757D20032C561 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767B67DE289757D20032C561 /* Constant.swift */; };
 		767B67E128975FAD0032C561 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767B67E028975FAD0032C561 /* UserDefaultsHelper.swift */; };
 		767B67E428977CE30032C561 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 767B67E328977CE30032C561 /* Alamofire */; };
 		767B67E728977CF90032C561 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 767B67E628977CF90032C561 /* SwiftyJSON */; };
@@ -50,6 +50,8 @@
 		76111DAB289384C800F5683C /* SCDream3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream3.otf; sourceTree = "<group>"; };
 		76111DAC289384C800F5683C /* SCDream2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream2.otf; sourceTree = "<group>"; };
 		76111DB72893874200F5683C /* HBIOS-SYS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HBIOS-SYS.ttf"; sourceTree = "<group>"; };
+		761C70572899FF6300652036 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		761C70582899FF8600652036 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7624105828928353005AFE3F /* 0727-Assignment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "0727-Assignment.storyboard"; sourceTree = "<group>"; };
 		7624105A28928559005AFE3F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7628153E2898BD1F009CA303 /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 		76563BC028923067008F2CE1 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		76563BC228923AE0008F2CE1 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		767B67DB2897527D0032C561 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
-		767B67DE289757D20032C561 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		767B67E028975FAD0032C561 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		76A560E12897D2C4007159FB /* RecommendRandomBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendRandomBeerViewController.swift; sourceTree = "<group>"; };
 		76A560E52897FC19007159FB /* RecommendRandomBeer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecommendRandomBeer.storyboard; sourceTree = "<group>"; };
@@ -108,8 +109,8 @@
 		767B67DD2897577B0032C561 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				767B67DE289757D20032C561 /* Constant.swift */,
 				767B67E028975FAD0032C561 /* UserDefaultsHelper.swift */,
+				761C70582899FF8600652036 /* Constant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 		76BE59582890DDC000DD5074 = {
 			isa = PBXGroup;
 			children = (
+				761C70572899FF6300652036 /* .gitignore */,
 				76FBE1F7289118C500FA3F9F /* 0726-sesac.playground */,
 				76BE59622890DDC000DD5074 /* Products */,
 				76BE59632890DDC000DD5074 /* sesac-0727 */,
@@ -300,6 +302,7 @@
 				7624105B28928559005AFE3F /* WebViewController.swift in Sources */,
 				76A560EC2897FC50007159FB /* DefaultColor.swift in Sources */,
 				76563BBF2892236C008F2CE1 /* LottoViewController.swift in Sources */,
+				761C70592899FF8600652036 /* Constant.swift in Sources */,
 				76A560EF2898063F007159FB /* UILabel+Extension.swift in Sources */,
 				767B67DC2897527D0032C561 /* ReusableViewProtocol.swift in Sources */,
 				76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */,
@@ -307,7 +310,6 @@
 				7628153F2898BD1F009CA303 /* BoxOfficeModel.swift in Sources */,
 				76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */,
 				76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */,
-				767B67DF289757D20032C561 /* Constant.swift in Sources */,
 				76563BBD28920CCD008F2CE1 /* ViewPresentableProtocol.swift in Sources */,
 				76563BC328923AE0008F2CE1 /* WebViewViewController.swift in Sources */,
 				76BE59812890E5D200DD5074 /* ListTableViewCell.swift in Sources */,
