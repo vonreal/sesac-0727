@@ -150,6 +150,7 @@ extension ImageSearchViewController: UISearchBarDelegate {
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         searchBar.text = nil
+        searchBar.setShowsCancelButton(true, animated: true)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -158,5 +159,13 @@ extension ImageSearchViewController: UISearchBarDelegate {
         } else {
             searchBar.text = "검색어를 입력해주세요."
         }
+    }
+    
+    // 취소 버튼 눌렀을때
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchResultList.removeAll()
+        resultImageCollectionView.reloadData()
+        searchBar.text = ""
+        searchBar.setShowsCancelButton(false, animated: true)
     }
 }
