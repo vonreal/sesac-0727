@@ -20,12 +20,12 @@ class LocationViewController: UIViewController {
         super.viewDidLoad()
         
         // 커스텀 폰트 -> 폰트 네임 확인
-        for family in UIFont.familyNames {
-            print("======\(family)=======")
-            for font in UIFont.fontNames(forFamilyName: family) {
-                print(font)
-            }
-        }
+//        for family in UIFont.familyNames {
+//            print("======\(family)=======")
+//            for font in UIFont.fontNames(forFamilyName: family) {
+//                print(font)
+//            }
+//        }
         exTextView.font = UIFont(name: "S-CoreDream-3Light", size: 14)
     }
     
@@ -93,5 +93,24 @@ class LocationViewController: UIViewController {
         let request = UNNotificationRequest(identifier: "wka", content: notificationContent, trigger: trigger)
         
         notificationCenter.add(request)
+    }
+    
+    
+    @IBAction func downloadIamge(_ sender: UIButton) {
+        let url = "https://apod.nasa.gov/apod/image/2208/M13_final2_sinfirma.jpg"
+        
+        print("1", Thread.isMainThread) // 일반적으로 모든 코드는 main스레드에서 움직이고 있다(디폴트: 메인 스레드)
+        DispatchQueue.global().async { // 동시 여러 작업 가능하게 해줘! (순서대로 실행되는 코드의 규칙을 깨버렸다)
+            print("2", Thread.isMainThread)
+            let data = try! Data(contentsOf: URL(string: url)!)
+            let image = UIImage(data: data)
+            
+            
+            DispatchQueue.main.async {
+                print("3", Thread.isMainThread)
+                self.imageView.image = image // UIImageView.image must be used from main thread only라는 보라색 경고! (사용자에게 보여지는 건 굉장히 중요한 작업)
+            }
+        }
+        print("4", Thread.isMainThread)
     }
 }
