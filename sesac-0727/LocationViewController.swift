@@ -13,6 +13,9 @@ class LocationViewController: UIViewController {
     let notificationCenter = UNUserNotificationCenter.current()
     
     @IBOutlet weak var exTextView: UITextView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760D949F289CB3FC0010F710 /* ImageSearchAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D949E289CB3FC0010F710 /* ImageSearchAPIManager.swift */; };
 		76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76111DA328935D3C00F5683C /* LocationViewController.swift */; };
 		76111DB1289384C800F5683C /* SCDream1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DA8289384C800F5683C /* SCDream1.otf */; };
 		76111DB4289384C800F5683C /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76111DAB289384C800F5683C /* SCDream3.otf */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760D949E289CB3FC0010F710 /* ImageSearchAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchAPIManager.swift; sourceTree = "<group>"; };
 		76111DA328935D3C00F5683C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		76111DA8289384C800F5683C /* SCDream1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream1.otf; sourceTree = "<group>"; };
 		76111DAB289384C800F5683C /* SCDream3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream3.otf; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		760D949D289CB3E20010F710 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				760D949E289CB3FC0010F710 /* ImageSearchAPIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
 		761C7062289A0E1600652036 /* ImageSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +259,7 @@
 		76BE59632890DDC000DD5074 /* sesac-0727 */ = {
 			isa = PBXGroup;
 			children = (
+				760D949D289CB3E20010F710 /* APIManager */,
 				76BE59722890DDC100DD5074 /* Info.plist */,
 				7624105828928353005AFE3F /* 0727-Assignment.storyboard */,
 				76BE59642890DDC000DD5074 /* AppDelegate.swift */,
@@ -386,6 +397,7 @@
 				761C705D289A065E00652036 /* BeerListTableViewController.swift in Sources */,
 				76111DA428935D3C00F5683C /* LocationViewController.swift in Sources */,
 				76A560E22897D2C4007159FB /* RecommendRandomBeerViewController.swift in Sources */,
+				760D949F289CB3FC0010F710 /* ImageSearchAPIManager.swift in Sources */,
 				7628153F2898BD1F009CA303 /* BoxOfficeModel.swift in Sources */,
 				76BE59672890DDC000DD5074 /* SceneDelegate.swift in Sources */,
 				76563BC128923067008F2CE1 /* TranslateViewController.swift in Sources */,

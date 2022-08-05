@@ -48,32 +48,11 @@ class ImageSearchViewController: UIViewController {
     }
     
     func fetchImage(searchText: String) {
-        let text = searchText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "맘모스"
-        
-        let url = EndPoint.imageSearchURL + "query=\(text)&display=30&start=\(startPage)"
-        
-        let header: HTTPHeaders = ["X-Naver-Client-Id":APIKey.NAVER_ID, "X-Naver-Client-Secret":APIKey.NAVER_PW]
-        
-        AF.request(url, method: .get, headers: header)
-            .validate(statusCode: 200...500)
-            .responseData { response in
-                switch response.result {
-                case .success(let value):
-                    let json = JSON(value)
-                    let items = json["items"].arrayValue
-                    self.total = json["total"].intValue
-                    for item in items {
-                        let link = item["link"].stringValue
-                        self.searchResultList.append(URL(string: link)!)
-                    }
-                    self.resultImageCollectionView.reloadData()
-                    break
-                    
-                case .failure(let error):
-                    print(error)
-                    break
-                }
-            }
+        ImageSearchAPIManager.shard.fetchImageData(searchText: searchText, startPage: startPage) { totalCount, list in
+            self.total = totalCount
+            self.searchResultList.append(contentsOf: list)
+            self.resultImageCollectionView.reloadData()
+        }
     }
 }
 
