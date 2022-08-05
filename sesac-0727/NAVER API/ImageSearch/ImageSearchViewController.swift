@@ -51,7 +51,10 @@ class ImageSearchViewController: UIViewController {
         ImageSearchAPIManager.shard.fetchImageData(searchText: searchText, startPage: startPage) { totalCount, list in
             self.total = totalCount
             self.searchResultList.append(contentsOf: list)
-            self.resultImageCollectionView.reloadData()
+            
+            DispatchQueue.main.async {
+                self.resultImageCollectionView.reloadData()
+            }
         }
     }
 }

@@ -28,7 +28,7 @@ class ImageSearchAPIManager {
         
         AF.request(url, method: .get, headers: header)
             .validate(statusCode: 200...500)
-            .responseData { response in
+            .responseData(queue: .global()) { response in // AF에서 제공해주는 비동기!!!!!!1
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
